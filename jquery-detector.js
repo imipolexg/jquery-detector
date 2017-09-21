@@ -62,6 +62,7 @@ function checkForJQuery(url, timeOutMillis) {
 
 if (system.args.length < 2) {
   console.log(system.args[0] + ' ' + '<url>');
+  phantom.exit();
 } else {
   checkForJQuery(system.args[1], system.args[2]);
 }
