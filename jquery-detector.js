@@ -38,7 +38,7 @@ function checkForJQuery(url, timeOutMillis) {
       return;
     }
 
-    var jQuery = waitFor(function() {
+    waitFor(function() {
       // Check in the page if a specific element is now visible
       return page.evaluate(function() {
         return typeof jQuery !== 'undefined' || typeof $ !== 'undefined';
